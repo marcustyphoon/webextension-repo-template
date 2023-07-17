@@ -1,4 +1,4 @@
-Quick and easy repo template for coding JavaScript.
+Quick and easy repo template for creating a web extension.
 
 What did I do to make this?
 
@@ -14,3 +14,10 @@ What did I do to make this?
   - prettier (my `printWidth` and `quoteProps`settings are kind of opinionated)
 - Added eslint and prettier scripts
 - Added basic automatic eslint + prettier GitHub workflow
+
+Plus:
+
+- Installed web-ext (`npm i -D web-ext`) and added package.json config
+- Added web-ext scripts
+- Created example MV2/MV3 web extension with one content script
+  - note: at time of writing, in MV3, Firefox and Chrome have different formats for background scripts/pages
