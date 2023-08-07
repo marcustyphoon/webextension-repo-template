@@ -4,11 +4,12 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - $default-branch
     paths:
       - src/**
       - package.json
       - .eslintrc.json
+      - .prettierrc
   pull_request:
     types: [opened, reopened, synchronize, ready_for_review]
 
@@ -29,6 +30,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
 
       - name: Cache dependencies
         id: node-modules-cache
@@ -39,6 +41,7 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        if: steps.node-modules-cache.outputs.cache-hit != 'true'
 
       - name: Run tests
         run: npm test
