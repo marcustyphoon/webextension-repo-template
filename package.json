@@ -1,9 +1,8 @@
 {
   "scripts": {
     "test": "web-ext lint && npm run eslint && npm run prettier",
-    "eslint": "eslint src --ext js,jsx",
+    "eslint": "eslint src",
     "prettier": "prettier src --check",
-
     "start": "web-ext run",
     "build": "web-ext build"
   },
