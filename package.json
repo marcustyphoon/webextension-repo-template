@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "test": "web-ext lint && npm run eslint && npm run prettier",
     "eslint": "eslint src",
     "prettier": "prettier src --check",
