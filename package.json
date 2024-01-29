@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "web-ext lint && npm run eslint && npm run prettier",
+    "test": "web-ext lint && pnpm run eslint && pnpm run prettier",
     "eslint": "eslint src",
     "prettier": "prettier src --check",
     "start": "web-ext run",
