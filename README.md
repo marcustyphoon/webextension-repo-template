@@ -8,7 +8,7 @@ What did I do to make this?
   - `pnpm add -D eslint` (or `pnpm dlx install-peerdeps --dev eslint-config-airbnb` or `pnpm dlx install-peerdeps --dev eslint-config-airbnb-base`)
   - `pnpm install -D prettier`
   - `pnpm install -D eslint-config-prettier` (possibly optional without a config, but good to know about)
-- Added preinstall script to enforce pnpm package manager
+- Added npmrc config to enforce pnpm package manager
 - Added basic config files for:
   - editorconfig
   - eslint (`"es2022": true` allows top-level await, `??=`, etc)

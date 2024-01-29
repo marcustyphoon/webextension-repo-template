@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "test": "web-ext lint && npm run eslint && npm run prettier",
     "eslint": "eslint src",
     "prettier": "prettier src --check",
@@ -12,6 +11,10 @@
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.2.4",
     "web-ext": "^7.10.0"
+  },
+  "engines": {
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
   },
   "webExt": {
     "sourceDir": "src/"
