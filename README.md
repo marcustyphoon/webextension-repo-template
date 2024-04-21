@@ -24,3 +24,5 @@ Plus:
   - note: at time of writing, in MV3, Firefox and Chrome have different formats for background scripts/pages
 
 I also committed the VS Code workspace setting to format files on save, which seems like a good idea for a repository that checks for prettier style as part of its CI script.
+
+_This work is marked with [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1)._
